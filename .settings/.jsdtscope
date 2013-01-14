@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="lib/joint/|parallel/data/|lib/jquery-ui-1/development-bundle/ui/|parallel/|lib/d3/|lib/jquery-ui-1/development-bundle/external/|lib/jquery-ui-1/development-bundle/ui/i18n/|lib/|lib/jquery-ui-1/development-bundle/|bootstrap/js/|lib/slickgrid/|lib/jquery-ui-1/development-bundle/ui/minified/" kind="src" path=""/>
+	<classpathentry kind="src" path="bootstrap/js"/>
+	<classpathentry excluding="joint/|jquery-ui-1/development-bundle/ui/|d3/|jquery-ui-1/development-bundle/external/|jquery-ui-1/development-bundle/ui/i18n/|jquery-ui-1/development-bundle/|slickgrid/|jquery-ui-1/development-bundle/ui/minified/" kind="src" path="lib"/>
+	<classpathentry kind="src" path="lib/d3"/>
+	<classpathentry kind="src" path="lib/joint"/>
+	<classpathentry excluding="ui/|external/|ui/i18n/|ui/minified/" kind="src" path="lib/jquery-ui-1/development-bundle"/>
+	<classpathentry kind="src" path="lib/jquery-ui-1/development-bundle/external"/>
+	<classpathentry excluding="i18n/|minified/" kind="src" path="lib/jquery-ui-1/development-bundle/ui"/>
+	<classpathentry kind="src" path="lib/jquery-ui-1/development-bundle/ui/i18n"/>
+	<classpathentry kind="src" path="lib/jquery-ui-1/development-bundle/ui/minified"/>
+	<classpathentry kind="src" path="lib/slickgrid"/>
+	<classpathentry excluding="data/" kind="src" path="parallel"/>
+	<classpathentry kind="src" path="parallel/data"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
