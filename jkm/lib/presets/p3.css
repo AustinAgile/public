@@ -8,3 +8,7 @@
   fill: #E0E4CC;
   stroke: none;
 }
+.p3 path:second-child {
+  fill: #FF0000;
+  stroke: none;
+}

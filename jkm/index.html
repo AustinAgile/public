@@ -21,13 +21,13 @@
     <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,700" rel="stylesheet"
           type="text/css">
     <style>
-        .p2 circle {
-            filter: url(#dropshadow);
-        }
+//        .p2 circle {
+//            filter: url(#dropshadow);
+//        }
 
-        .p3 path {
-            filter: url(#dropshadow)
-        }
+//        .p3 path {
+//            filter: url(#dropshadow)
+//        }
 
         .p6 text {
           font-size: 12px !important;
@@ -207,7 +207,7 @@ new Knob(document.getElementById('p6'), new Ui.P6());
     </li>
     <li class="column">
         <h3>Arc</h3>
-        <input class="arcExample" type="range" min="0" max="10" data-width="100" data-height="100"
+        <input id="arcExample" class="p3" type="range" min="0" max="10" data-width="100" data-height="100"
                data-angleOffset="220"
                data-angleRange="280">
     </li>
@@ -323,12 +323,22 @@ new Knob(document.getElementById('p6'), new Ui.P6());
     Arcxample.prototype.createElement = function() {
 
         Ui.prototype.createElement.apply(this, arguments);
+        console.log(this.options);
         this.addComponent(new Ui.Arc({
-            arcWidth: this.width / 10
+            arcWidth: this.width / 10,
+            startAngle: 300
         }));
-        this.el.node.setAttribute("class", "arcExample");
+        var arc2 = new Ui.Arc({
+            arcWidth: this.width / 5,
+            startAngle: 200
+        });
+        console.log(arc2);
+        this.addComponent(arc2);
+        this.el.node.setAttribute("class", "p3");
+        console.log(this.el);
     };
-    new Knob(document.getElementsByClassName('arcExample')[0], new Arcxample());
+//    new Knob(document.getElementsByClassName('arcExample')[0], new Arcxample());
+    new Knob(document.getElementById('arcExample'), new Arcxample());
 
 </script>
 <svg>
