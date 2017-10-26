@@ -145,7 +145,7 @@
 
 			(!this.o.displayInput) && this.$.hide();
 
-			var labels = this.$.attr('label').split(".");
+			var labels = this.$.attr('label').split("|");
 			this.o.xtraHeight = 17 * (labels.length - 1);
 
 			this.$c = $('<canvas width="' +
@@ -661,7 +661,7 @@
 			c.textAlign = 'center';
 			c.textBaseline = 'bottom';
 //			c.fillText(this.$.attr('label'), this.o.width/2, this.o.height);
-			var labels = this.$.attr('label').split('.');
+			var labels = this.$.attr('label').split('|');
 			for (var i=0; i<labels.length; i++) {
 				c.fillText(labels[i], this.o.width/2, this.o.height+(i*17));
 			}
@@ -691,13 +691,13 @@
 					c.fillText(message, d.o.width/2, d.o.height-20);
  				};
 				this.setVal = function(v) {
-					d.val(v);
 					if (d.cH) {
 						d.cH(v);
 					};
 					if (d.rH) {
 						d.rH(v);
 					};
+					d.val(v);
 				};
 			}
 		).parent();
