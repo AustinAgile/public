@@ -699,6 +699,10 @@
 					};
 					d.val(v);
 				};
+				this.setLabel = function(label) {
+					d.$.attr("label", label);
+					d._draw();
+				};
 			}
 		).parent();
 	};
